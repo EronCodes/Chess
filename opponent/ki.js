@@ -1,4 +1,8 @@
 function Ki() {
+  this.play = function (board, opponent) {
+
+  };
+  
   this.getOpponents = function (board, opponent) {
 
   };
