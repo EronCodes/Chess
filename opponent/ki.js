@@ -1,9 +1,22 @@
-function Ki() {
-  this.play = function (board, opponent) {
+function Ki(side) {
+  /*
+  1 - 6 White player
+  -1 - -6 Black player
+  */
 
+  this.side = side;
+
+  this.play = function (board) {
+    var ownPlayers    = this.getOwnPlayers(board, side);
+    var player        = this.ownPlayers[Math.floor(Math.random() * ownPlayers.length)];
+    var movingOptions = this.getMovingOptions(player, board);
+    var step          = movingOptions[Math.floor(Math.random() * ownPlayers.length)];
+    var resultBoard   = this.makeStep(player, step, board);
+
+    return resultBoard;
   };
-  
-  this.getOpponents = function (board, opponent) {
+
+  this.getOwnPlayers = function (board) {
 
   };
 
