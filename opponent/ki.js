@@ -30,6 +30,8 @@ function Ki(side) {
     this.inverted = true;
   }
 
+  this.movingOptions = new MovingOptions();
+
   this.play = function (board) {
     if (this.inverted) {
       var board         = this.invertBoard(board);
