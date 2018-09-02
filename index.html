@@ -10,5 +10,18 @@
     <button id="startbutton" onclick="setup()">Generate board</button>
 
     <script src="opponent/ki.js"></script>
+    <script>
+      window.onload = function () {
+        ki = new Ki(1);
+        field = [[2, 3, 4, 5, 6, 4, 3, 2],
+         [1, 1, 1, 1, 1, 1, 1, 1],
+         [0, 0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 0, 0, 0, 0, 0],
+         [-1, -1, -1, -1, -1, -1, -1, -1],
+         [-2, -3, -4, -5, -6, -4, -3, -2]];
+      }
+    </script>
   </body>
 </html>
