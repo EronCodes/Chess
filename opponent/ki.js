@@ -24,6 +24,14 @@ function Ki(side) {
     return board;
   }
 
+  this.rotateBoard = function (board) {
+    board.reverse();
+    for (var i = 0; i < board.length; i++) {
+      board[i].reverse();
+    }
+    return board;
+  }
+
   if (side == 1) {
     this.inverted = false;
   } else {
