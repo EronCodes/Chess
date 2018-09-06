@@ -29,4 +29,8 @@ function MovingOptions() {
     }
     return true;
   };
+
+  this.getPos = function (x, y, board) {
+    return board[x, y];
+  }
 }
